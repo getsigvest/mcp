@@ -1,0 +1,43 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.getsigvest/sigvest",
+  "title": "SigVest",
+  "description": "Portfolio-aware finance tools: drift, risk, earnings, benchmarks, news, tax harvesting",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.getsigvest.com/mcp",
+  "icons": [
+    {
+      "src": "https://www.getsigvest.com/android-chrome-512x512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    },
+    {
+      "src": "https://www.getsigvest.com/android-chrome-192x192.png",
+      "mimeType": "image/png",
+      "sizes": ["192x192"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.getsigvest.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "SigVest API key as a bearer token. Create one at https://www.getsigvest.com/mcp",
+          "value": "Bearer {api_key}",
+          "isRequired": true,
+          "isSecret": true,
+          "variables": {
+            "api_key": {
+              "description": "SigVest API key from https://www.getsigvest.com/mcp",
+              "isRequired": true,
+              "isSecret": true,
+              "format": "string"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

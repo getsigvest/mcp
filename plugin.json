@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sigvest",
+  "version": "1.0.0",
+  "description": "Read-only portfolio analysis tools for AI agents: drift, risk, benchmarks, earnings, news impact and tax-loss harvesting. Never executes trades.",
+  "author": {
+    "name": "SigVest",
+    "url": "https://www.getsigvest.com"
+  },
+  "homepage": "https://www.getsigvest.com/mcp",
+  "repository": "https://github.com/getsigvest/mcp",
+  "license": "MIT",
+  "keywords": ["finance", "portfolio", "investing", "risk", "tax", "read-only"]
+}

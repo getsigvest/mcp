@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "sigvest": {
+      "url": "https://mcp.getsigvest.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:SIGVEST_API_KEY}"
+      }
+    }
+  }
+}
